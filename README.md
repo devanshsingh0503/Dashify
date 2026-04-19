@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Cyberweb (Dashify) - Next.js Fullstack Application
 
-## Getting Started
+This is a comprehensive full-stack application featuring a modern **Next.js** frontend and a robust **Node.js/Express** backend.
 
-First, run the development server:
+## 🚀 Project Structure
 
+The project is organized as a monorepo for easier management:
+
+- **/client**: The frontend application built with [Next.js](https://nextjs.org/).
+- **/server**: The backend API server built with [Express.js](https://expressjs.com/) and [MongoDB](https://www.mongodb.com/).
+
+## 🛠️ Tech Stack
+
+### Frontend (Client)
+- **Framework**: Next.js 16 (App Router)
+- **Styling**: Tailwind CSS 4
+- **Language**: TypeScript / JavaScript
+- **Animations**: AOS (Animate On Scroll)
+
+### Backend (Server)
+- **Framework**: Node.js & Express
+- **Database**: MongoDB (Mongoose)
+- **Authentication**: JWT & Bcrypt
+- **Security**: Helmet, Rate Limiting, CORS
+- **Email**: Nodemailer
+
+## 🏁 Getting Started
+
+### Prerequisites
+- Node.js (Latest LTS)
+- MongoDB (Local or Atlas)
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/devanshsingh0503/Dashify.git
+   cd Dashify
+   ```
+
+2. Install dependencies for both parts:
+   ```bash
+   # From the root
+   npm install
+   ```
+
+### Running the Application
+
+#### Start Frontend
 ```bash
+cd client
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### Start Backend
+```bash
+cd server
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🌐 Deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Frontend
+Deployed on **Vercel**. The build configuration is optimized for the `client/` subdirectory.
 
-## Learn More
+### Backend
+Can be deployed on platforms like Render, Railway, or VPS.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+*Bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).*
